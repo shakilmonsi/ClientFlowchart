@@ -39,7 +39,7 @@ function RegisterPage() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[var(--color-background)] px-4">
+    <section className="min-h-screen flex items-center justify-center bg-[#101828] px-4">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="w-full max-w-md bg-[var(--color-card)] p-8 rounded-xl shadow-md space-y-6"

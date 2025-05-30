@@ -293,7 +293,7 @@ const TreeChart = () => {
     return depth;
   };
 
-  const getNodePos = (id, index) => {
+  const getNodePos = (id, ) => {
     if (nodePositions[id]) return nodePositions[id];
     const level = getLevel(id);
     const nodesAtLevel = visibleNodes.filter((n) => getLevel(n.id) === level);

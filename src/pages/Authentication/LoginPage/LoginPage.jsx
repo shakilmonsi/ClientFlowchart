@@ -35,7 +35,7 @@ function LoginPage() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[var(--color-background)] px-4">
+    <section className="min-h-screen flex items-center justify-center bg-[#101828] px-4">
       <div>
         <form
           onSubmit={handleSubmit(onSubmit)}
