@@ -8,6 +8,7 @@ import FlowchartPage from '../pages/FlowchartPage/FlowchartPage';
 import FlowchartPage2 from '../pages/FlowchartPage/FlowchartPage2/FlowchartPage2';
 import FlowchartPage3 from '../pages/FlowchartPage/FlowchartPage2/flowchartPage3/FlowchartPage3';
 import FlowchartPage4 from '../pages/FlowchartPage/FlowchartPage4/FlowchartPage4';
+import TreeChart from '../pages/FlowchartPage/FlowchartPage2/TreeChart';
 
 // import { lazy } from "react";
 // const Contact = lazy(() => import("../pages/Contact/Contact"));
@@ -22,31 +23,42 @@ const AppRoutes = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+
       {
         path: "/login",
         element: <LoginPage />,
-        
       },
+
       {
         path: "/register",
         element: <RegisterPage />,
       },
+
       {
         path: "/flowchart",
         element: <FlowchartPage />,
       },
+
       {
         path: "/flowcharttwo",
         element: <FlowchartPage2 />,
       },
+
+      {
+        path: "/treechart",
+        element: <TreeChart/>,
+      },
+
       {
         path: "/flowcharttree",
         element: <FlowchartPage3 />,
       },
+
       {
         path: "/flowchartfore",
-        element: <FlowchartPage4/>,
+        element: <FlowchartPage4 />,
       },
+      
     ],
   },
 ]);

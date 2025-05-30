@@ -19,6 +19,9 @@ const Navbar = () => {
           <Link to="/flowcharttwo" className="hover:text-gray-300">
             Flowchart
           </Link>
+          <Link to="/treechart" className="hover:text-gray-300">
+            TreeChart
+          </Link>
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>☰</button>
