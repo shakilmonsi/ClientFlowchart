@@ -1,17 +1,12 @@
-import { useTranslation } from "react-i18next";
-import { useTheme } from "../../context/ThemeContext/ThemeProvider";
+
+import FlowchartPage2 from "../FlowchartPage/FlowchartPage2/FlowchartPage2";
 
 function Home() {
-  const { toggleTheme } = useTheme();
-  const { t } = useTranslation();
+
   return (
-    <section>
-      Home Page
-      <button onClick={toggleTheme}>Change Theme</button>
-      <h2>{t("welcome")}</h2>
-      <button>{t("button.login")}</button>
-      <button>{t("button.signup")}</button>
-    </section>
+    <div>
+      <FlowchartPage2></FlowchartPage2>
+    </div>
   );
 }
 

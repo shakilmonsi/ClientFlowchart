@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
-import { toast } from "react-toastify"; // optional for notifications
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../../context/AuthContext/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 function RegisterPage() {
   const { createUser, isLoading, setIsLoading } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const {
     register,
@@ -21,9 +24,12 @@ function RegisterPage() {
       const user = userCredential.user;
 
       console.log("✅ User created:", user);
-      toast.success("Account created successfully!"); // optional
+      toast.success("Account created successfully!");
 
-      // Optional: Redirect to login or dashboard
+      // ✅ Redirect after success
+      setTimeout(() => {
+        navigate("/flowcharttwo", { replace: true });
+      }, 1500);
     } catch (error) {
       console.error("❌ Registration failed:", error.message);
       toast.error(error.message || "Registration failed!");
@@ -113,6 +119,9 @@ function RegisterPage() {
           className="w-full py-2 rounded-md bg-[var(--color-primary)] text-white hover:bg-[var(--color-cta-active)] cursor-pointer transition"
         />
       </form>
+
+      {/* Toast Container */}
+      <ToastContainer position="top-center" autoClose={3000} theme="colored" />
     </section>
   );
 }

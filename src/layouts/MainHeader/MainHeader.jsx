@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white px-4 py-3">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">
+        <Link to="/flowcharttwo" className="text-xl font-bold">
           Flowchart App
         </Link>
 
@@ -15,17 +15,10 @@ const Navbar = () => {
           <Link to="/login" className="hover:text-gray-300">
             Login
           </Link>
-          <Link to="/flowchart" className="hover:text-gray-300">
+
+          <Link to="/flowcharttwo" className="hover:text-gray-300">
             Flowchart
           </Link>
-          <Link to="/flowcharttwo" className="hover:text-gray-300">
-            flowcharttwo
-          </Link>
-          <Link to="/flowcharttree" className="hover:text-gray-300">
-            FlowchartPage3
-          </Link>
-
-       
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>☰</button>
