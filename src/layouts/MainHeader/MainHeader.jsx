@@ -28,10 +28,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden mt-2 space-y-2 px-4">
-          <Link to="/" className="block hover:text-gray-300">
+          <Link to="/login" className="block hover:text-gray-300">
             Login
           </Link>
-          <Link to="/flow" className="block hover:text-gray-300">
+          <Link to="/flowcharttwo" className="hover:text-gray-300">
             Flowchart
           </Link>
         </div>
