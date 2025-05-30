@@ -105,7 +105,7 @@ function LoginPage() {
         </form>
 
         {/* Sign Up Link */}
-        <div className="mt-8 text-center text-white text-[#101828]">
+        <div className="mt-8 text-center text-white">
           Don't have an account?{" "}
           <Link
             to="/register"
